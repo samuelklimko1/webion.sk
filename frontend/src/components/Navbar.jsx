@@ -7,9 +7,9 @@ function Navbar() {
 
     return (
         <>
-            <div>
+            <div className="container-navbar">
                 <button>Kontakt</button>
-                <Link to="/"><img src="/webion-logo.jpg"/></Link>
+                <Link to="/"><img src="/webion-logo-transparent.png" className="navbar-logo"/></Link>
                 <button>Menu</button>
             </div>
         </>

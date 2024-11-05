@@ -4,7 +4,6 @@ import Home from "./components/Home.jsx"
 import Footer from "./components/Footer.jsx"
 import { Route, Routes } from "react-router-dom"
 
-
 function App() {
   return (
     <>
@@ -17,4 +16,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
