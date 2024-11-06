@@ -1,7 +1,4 @@
-@font-face {
-    font-family: 'TimeBurner';
-    src: url('/time-burner.ttf') format('truetype');
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
 .container-navbar {
     display: flex;
@@ -11,7 +8,7 @@
 }
 
 .navbar-logo {
-    height: 75px;
+    height: 50px;
 }
 
 .button-navbar {
@@ -22,7 +19,8 @@
     border: none;
     color: white;
     font-size: 20px;
-    font-family: "TimeBurner", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
 }
 
 .button-navbar::after {

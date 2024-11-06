@@ -14,14 +14,14 @@ function Home() {
                 <div id="atom">
                     <div id="nucleus">
                     </div>
-                    <div class="orbit">
-                        <div class="electron"></div>
+                    <div className="orbit">
+                        <div className="electron"></div>
                     </div>
-                    <div class="orbit">
-                        <div class="electron"></div>
+                    <div className="orbit">
+                        <div className="electron"></div>
                     </div>
-                    <div class="orbit">
-                        <div class="electron"></div>
+                    <div className="orbit">
+                        <div className="electron"></div>
                     </div>
                 </div>
             </div>
