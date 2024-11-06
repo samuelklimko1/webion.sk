@@ -1,10 +1,41 @@
+@font-face {
+    font-family: 'TimeBurner';
+    src: url('/time-burner.ttf') format('truetype');
+}
+
 .container-navbar {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 42vw;
+    gap: 37vw;
 }
 
 .navbar-logo {
     height: 75px;
+}
+
+.button-navbar {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-family: "TimeBurner", sans-serif;
+}
+
+.button-navbar::after {
+    content: "";
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 0;
+    height: 1px; 
+    background-color: #fff; 
+    transition: width 0.5s ease; 
+}
+
+.button-navbar:hover::after {
+    width: 100%; 
 }

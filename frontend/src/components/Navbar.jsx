@@ -8,9 +8,9 @@ function Navbar() {
     return (
         <>
             <div className="container-navbar">
-                <button>Kontakt</button>
+                <button className="button-navbar">Kontakt</button>
                 <Link to="/"><img src="/webion-logo-transparent.png" className="navbar-logo"/></Link>
-                <button>Menu</button>
+                <button className="button-navbar">≡Menu</button>
             </div>
         </>
     )

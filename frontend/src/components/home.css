@@ -1,0 +1,17 @@
+.container-home {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container-maintext {
+    text-align: left;
+}
+
+.container-atom {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
