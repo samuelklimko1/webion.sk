@@ -1,17 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400&display=swap');
+
 .container-home {
     min-height: 50vh;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
 }
 
 .container-maintext {
     text-align: left;
 }
 
-.container-atom {
-    position: relative;
-    width: 100%;
+.bigtext-home {
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 100px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: revealText 2s forwards; 
+}
+
+.bigtext-home-mieru {
+    font-family: "Merriweather", serif;
+}
+
+@keyframes revealText {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
+.container-button-chcemto {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.button-chcemto {
+    position: relative;
+    padding: 1.4em 3.85em;
+    background-color: black;
+    border: none;
+    color: #f0f0f0;
+    border-radius: 1000px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+
+.button-chcemto::after {
+    top: -3px;
+    content: "";
+    height: 59px;
+    width: 170px;
+    position: absolute; 
+    left: 50%;
+    transform: translateX(-50%); 
+    border-radius: 1000px;
+    background-image: linear-gradient(to right, #a8007e, #860000);
+    z-index: -1;
+}
+
+.button-chcemto:hover {
+    box-shadow: -10px 0 5px #ff00d935, 10px 0 5px #ff000037, 0 -10px 5px #ff00d935, 0 10px 5px #ff000037;
+    transition-duration: 0.5s;
+}
+
+.container-form {
+    display: flex;
 }
