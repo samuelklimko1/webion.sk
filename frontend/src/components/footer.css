@@ -1,3 +1,30 @@
 .container-footer {
     padding-top: 200px;
+    display: flex;
+    gap: 30vw;
+    flex-direction: row;
+    align-items: center;
+}
+
+.webion-footer {
+    height: 100px;
+}
+
+.container-quicklinks {
+    display: flex;
+    flex-direction: column;
+}
+
+.link-footer {
+    color: gray;
+}
+
+.link-footer:hover {
+    color: white;
+    transition-duration: 0.6s;
+}
+
+h5 {
+    font-weight: bolder;
+    font-size: 20px;
 }

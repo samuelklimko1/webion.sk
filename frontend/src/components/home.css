@@ -4,7 +4,7 @@
     min-height: 50vh;
     display: flex;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 150px;
 }
 
 .container-maintext {
@@ -52,16 +52,16 @@
     border-radius: 1000px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .button-chcemto::after {
-    top: -3px;
     content: "";
-    height: 59px;
-    width: 170px;
+    height: 105%;
+    width: 103%;
     position: absolute; 
-    left: 50%;
-    transform: translateX(-50%); 
     border-radius: 1000px;
     background-image: linear-gradient(to right, #a8007e, #860000);
     z-index: -1;
@@ -74,4 +74,92 @@
 
 .container-form {
     display: flex;
+    justify-content: center;
+    padding-top: 300px;
+}
+
+.input-form {
+    position: relative;
+    height: 50px;
+    width: 350px;
+    padding-left: 10px;
+    background-color: black;
+    border: none;
+    color: #f0f0f0;
+    border-radius: 1000px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    border: 3px solid #86003ab6;
+}
+
+.input-form:focus {
+    outline: none;
+}
+
+.input-form:hover, .input-form:focus {
+    box-shadow: -1px 0 10px #ff00d9, 1px 0 10px #ff0000, 0 -1px 10px #ff00d9, 0 1px 10px #ff0000;
+    transition-duration: 0.8s;
+}
+.textarea-form {
+    resize: none;
+    border-radius: 20px !important;
+    height: 175px !important;
+    padding-top: 10px;
+}
+
+.container-iandt-form {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.container-inputs-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container-checkbox-form {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-checkbox-form > * {
+    padding-right: 10px;
+}
+
+.container-submit-form {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.form-submit-button {
+    position: relative;
+    padding: 1.4em 3.85em;
+    background-color: black;
+    border: none;
+    color: #f0f0f0;
+    border-radius: 1000px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-submit-button::after {
+    content: "";
+    height: 105%;
+    width: 103%;
+    position: absolute; 
+    border-radius: 1000px;
+    background-image: linear-gradient(to right, #a8007e, #860000);
+    z-index: -1;
+}
+
+.form-submit-button:hover {
+    box-shadow: -10px 0 5px #ff00d935, 10px 0 5px #ff000037, 0 -10px 5px #ff00d935, 0 10px 5px #ff000037;
+    transition-duration: 0.5s;
 }
