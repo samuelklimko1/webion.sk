@@ -36,10 +36,9 @@
     padding-top: 20px;
 }
 
-.logo {
-    text-decoration: none;
-    color: white;
-    font-size: 36px;
+.logo-image {
+    max-width: 200px; 
+    height: auto; 
 }
 
 .nav-logo.show {
@@ -60,6 +59,9 @@
     opacity: 0;
     transform: translateY(-20px); 
     color: white;
+    border: none;
+    background: none;
+    text-decoration: underline;
 }
 
 .contact-nav.show {

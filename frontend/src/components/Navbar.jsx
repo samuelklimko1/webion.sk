@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./navbar.css";
-import { Link } from "react-router-dom"
-
+import { Link } from "react-router-dom";
 
 function Navbar() {
     const [isVisible, setIsVisible] = useState(false);
@@ -17,10 +16,17 @@ function Navbar() {
     return (
         <div className="container-navbar">
             <nav className={`nav-logo ${isVisible ? 'show' : ''}`}>
-                <Link to="/" className="logo">SAMUEL</Link>
-                <Link to="/" className="logo logo-hollow">KLIMKO</Link>
+                <Link to="/" className="logo">
+                    <img 
+                        src="/webion.png" 
+                        alt="Logo" 
+                        className="logo-image" 
+                    />
+                </Link>
             </nav>
-            <Link to="/booking" className={`contact-nav ${isVisible ? 'show' : ''}`}>KONTAKT</Link>
+            <button className={`contact-nav ${isVisible ? 'show' : ''}`}>
+                KONTAKT
+            </button>
         </div>
     );
 }

@@ -139,8 +139,8 @@ function Home() {
                     <span className="span-contact-h1"><h1 className="h1-contact-home">Ako vám môžem </h1><h1 className="h1-contact-home-italic"> pomôcť?</h1></span>
                     <p>Môžte vyplniť formulár alebo mi napísať na: </p>
                     <div className="container-contact-home-links">
-                        <Link to="mailto:samuelklimko1@gmail.com" className="link-contact-home"><SiGmail  style={{ paddingRight: '10px', paddingLeft: "3px"}}/> samuelklimko1@gmail.com</Link>
-                        <Link to="https://instagram.com" className="link-contact-home"><FaInstagram  style={{ paddingRight: '10px', paddingLeft: "3px"}}/> samo.klimko</Link>
+                        <Link to="mailto:webion.sk@gmail.com" className="link-contact-home"><SiGmail  style={{ paddingRight: '10px', paddingLeft: "3px"}}/> webion.sk@gmail.com</Link>
+                        <Link to="https://www.instagram.com/webion.sk/" className="link-contact-home"><FaInstagram  style={{ paddingRight: '10px', paddingLeft: "3px"}}/> webion.sk</Link>
                         <Link to="https://linkedin.com" className="link-contact-home"><FaLinkedin  style={{ paddingRight: '10px', paddingLeft: "3px"}}/> Samuel Klimko</Link>
                     </div>
                 </div>
