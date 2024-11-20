@@ -39,6 +39,23 @@
     .button-home {
         font-size: 24px !important;
     }
+    .container-mywork-home-text {
+        flex-direction: column !important;
+        text-align: center;
+        gap: 0vw !important;
+    }
+    .mywork-more {
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+@media (max-width: 460px) {
+    .container-mywork-home-h2 {
+        display: flex;
+        flex-direction: column !important;
+    }
 }
 
 .container-home {
@@ -100,10 +117,15 @@
 .container-mywork-home {
     padding-top: 100px;
     display: flex;
-    gap: 20vw;
     justify-content: center;
-    align-items: flex-end;
     padding-bottom: 60px;
+}
+
+.container-mywork-home-text {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 20vw;
 }
 
 .mywork-home-p {

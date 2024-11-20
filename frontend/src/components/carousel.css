@@ -5,30 +5,41 @@
     padding: 20px;
 }
 
-/* Style for all images (non-center) */
 .carousel-slide img {
     width: 100%;
     border-radius: 10px;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Style for the non-center images */
 .slick-slide:not(.slick-center) .carousel-slide img {
-    opacity: 0.5;    /* Reduce opacity for non-center images */
-    transform: scale(0.9); /* Scale down non-center images */
+    opacity: 0.5;    
+    transform: scale(0.9); 
     transform: scale(0.8) rotateY(-25deg);
 }
 
-/* Style for center image */
 .slick-center .carousel-slide img {
-    opacity: 1;    /* Full opacity for the center image */
-    transform: scale(1);   /* Keep the center image at its normal size */
+    opacity: 1;  
+    transform: scale(1);  
 }
 
-/* Hide the previous/next buttons (arrows) */
 .slick-prev, .slick-next {
     z-index: 1;
     font-size: 1.5rem;
     color: #fff;
     opacity: 0;
+}
+
+@media (max-width: 1024px) {
+    .carousel-container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-container {
+        padding: 5px;
+    }
+    .carousel-slide img {
+        max-height: 300px; /* Adjust height on mobile */
+    }
 }

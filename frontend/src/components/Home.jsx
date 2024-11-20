@@ -72,35 +72,43 @@ function Home() {
                     design a tvorba webstránok
                 </div>
                 <div className="container-buttons-home">
-                    <button className={`button-home ${isVisible ? 'show' : ''} ${isFullyVisible ? 'visible' : ''}`}>
-                        O mne
-                    </button>
-                    <button className={`button-home ${isVisible ? 'show' : ''} ${isFullyVisible ? 'visible' : ''}`}>
+                    <button
+                        className={`button-home ${isVisible ? 'show' : ''} ${isFullyVisible ? 'visible' : ''}`}
+                        onClick={() => document.getElementById("projects").scrollIntoView({ behavior: "smooth" })}
+                    >
                         Moje Projekty
                     </button>
-                    <button className={`button-home ${isVisible ? 'show' : ''} ${isFullyVisible ? 'visible' : ''}`}>
+                    <button
+                        className={`button-home ${isVisible ? 'show' : ''} ${isFullyVisible ? 'visible' : ''}`}
+                        onClick={() => document.getElementById("services").scrollIntoView({ behavior: "smooth" })}
+                    >
                         Služby
                     </button>
-                    <button className={`button-home ${isVisible ? 'show' : ''} ${isFullyVisible ? 'visible' : ''}`}>
+                    <button
+                        className={`button-home ${isVisible ? 'show' : ''} ${isFullyVisible ? 'visible' : ''}`}
+                        onClick={() => document.getElementById("contact").scrollIntoView({ behavior: "smooth" })}
+                    >
                         Kontakt
                     </button>
                 </div>
             </div>
-            <div className="container-mywork-home">
-                <div>
-                    <p className="mywork-home-p">MOJA PRÁCA</p>
-                    <div className="container-mywork-home-h2">
-                        <h2 className="mywork-home-h2">Príklady mojich </h2><h2 className="mywork-home-h2-italic">stránok</h2>
+            <div id="projects" className="container-mywork-home">
+                <div className="container-mywork-home-text">
+                    <div>
+                        <p className="mywork-home-p">MOJA PRÁCA</p>
+                        <div className="container-mywork-home-h2">
+                            <h2 className="mywork-home-h2">Príklady mojich </h2><h2 className="mywork-home-h2-italic">stránok</h2>
+                        </div>
                     </div>
-                </div>
-                <div className="mywork-more">
-                    <Link to="https://linkedin.com" className="link-more-mywork">
-                        <span className="arrow-container">Viac<div style={{ backgroundColor: 'white', borderRadius: '60px', paddingTop: "5px", paddingLeft: "6px", paddingRight: "6px"}}><FaArrowRight color="black" /></div></span>
-                    </Link>
+                    <div className="mywork-more">
+                        <Link to="https://linkedin.com" className="link-more-mywork">
+                            <span className="arrow-container">Viac<div style={{ backgroundColor: 'white', borderRadius: '60px', paddingTop: "5px", paddingLeft: "6px", paddingRight: "6px"}}><FaArrowRight color="black" /></div></span>
+                        </Link>
+                    </div>
                 </div>
             </div>
             <Carousel/>
-            <div className="container-myservices">
+            <div id="services" className="container-myservices">
                 <div className="myservices-container-texts">
                     <p className="mywork-home-p">MOJE SLUŽBY</p>
                     <h2 className="mywork-home-h2 myservices-h1">Cenník</h2>
@@ -133,7 +141,7 @@ function Home() {
             <div>
                 {/*objednanie na call*/}
             </div>
-            <div className="container-contact-home">
+            <div id="contact" className="container-contact-home">
                 <div>
                     <h2 className="h2-contact-home">Kontakt</h2>
                     <span className="span-contact-h1"><h1 className="h1-contact-home">Ako vám môžem </h1><h1 className="h1-contact-home-italic"> pomôcť?</h1></span>
