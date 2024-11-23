@@ -141,53 +141,59 @@ function Home() {
             <div>
                 {/*objednanie na call*/}
             </div>
-            <div id="contact" className="container-contact-home">
-                <div>
-                    <h2 className="h2-contact-home">Kontakt</h2>
-                    <span className="span-contact-h1"><h1 className="h1-contact-home">Ako vám môžem </h1><h1 className="h1-contact-home-italic"> pomôcť?</h1></span>
-                    <p>Môžte vyplniť formulár alebo mi napísať na: </p>
-                    <div className="container-contact-home-links">
-                        <Link to="mailto:webion.sk@gmail.com" className="link-contact-home"><SiGmail  style={{ paddingRight: '10px', paddingLeft: "3px"}}/> webion.sk@gmail.com</Link>
-                        <Link to="https://www.instagram.com/webion.sk/" className="link-contact-home"><FaInstagram  style={{ paddingRight: '10px', paddingLeft: "3px"}}/> webion.sk</Link>
-                        <Link to="https://linkedin.com" className="link-contact-home"><FaLinkedin  style={{ paddingRight: '10px', paddingLeft: "3px"}}/> Samuel Klimko</Link>
+            <div className="container-contact">
+                <div id="contact" className="container-contact-home">
+                    <div>
+                        <h2 className="h2-contact-home">Kontakt</h2>
+                        <div className="container-contact-h1">
+                            <div className="contact-h1"><h1 className="h1-contact-home">Ako vám môžem </h1><h1 className="h1-contact-home-italic"> pomôcť?</h1></div>
+                        </div>
+                        <p>Môžte vyplniť formulár alebo mi napísať na: </p>
+                        <div className="container-contact-links">
+                            <div className="container-contact-home-links">
+                                <Link to="mailto:webion.sk@gmail.com" className="link-contact-home"><SiGmail  style={{ paddingRight: '10px', paddingLeft: "3px"}}/> webion.sk@gmail.com</Link>
+                                <Link to="https://www.instagram.com/webion.sk/" className="link-contact-home"><FaInstagram  style={{ paddingRight: '10px', paddingLeft: "3px"}}/> webion.sk</Link>
+                                <Link to="https://linkedin.com" className="link-contact-home"><FaLinkedin  style={{ paddingRight: '10px', paddingLeft: "3px"}}/> Samuel Klimko</Link>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <form className="form-contact" onSubmit={handleSubmit}>
-                        <p className="p-form-contact">Celé meno</p>
-                        <div className="input-wrapper">
-                            <FaUser className="input-icon" />
-                            <input
-                                name="name"
-                                placeholder="Zadajte svoje celé meno"
-                                className="input-form-contact"
-                                value={formData.name}
-                                onChange={handleChange}/>
-                        </div>
-                        <p className="p-form-contact">Email</p>
-                        <div className="input-wrapper">
-                            <MdOutlineEmail className="input-icon" size={20}/>
-                            <input
-                                name="email"
-                                placeholder=" Zadajte svoj email"
-                                className="input-form-contact"
-                                value={formData.email}
-                                onChange={handleChange}/>
-                        </div>
-                        <p className="p-form-contact">Telefónne číslo</p>
-                        <div className="input-wrapper">
-                            <MdLocalPhone className="input-icon" size={20}/>
-                            <input
-                                name="phone"
-                                placeholder=" Zadajte svoj email"
-                                className="input-form-contact"
-                                value={formData.phone}
-                                onChange={handleChange}/>
-                        </div>
-                        <p className="p-form-contact">Správa</p>
-                        <input name="message" placeholder="Správa" className="input-form-contact input-form-contact-message" value={formData.message} onChange={handleChange}></input>
-                        <button type="submit" className="button-submit-contact"><span className="span-submit-button-contact">Odoslať<FaArrowRightLong /></span></button>
-                    </form>
+                    <div>
+                        <form className="form-contact" onSubmit={handleSubmit}>
+                            <p className="p-form-contact">Celé meno</p>
+                            <div className="input-wrapper">
+                                <FaUser className="input-icon" />
+                                <input
+                                    name="name"
+                                    placeholder="Zadajte svoje celé meno"
+                                    className="input-form-contact"
+                                    value={formData.name}
+                                    onChange={handleChange}/>
+                            </div>
+                            <p className="p-form-contact">Email</p>
+                            <div className="input-wrapper">
+                                <MdOutlineEmail className="input-icon" size={20}/>
+                                <input
+                                    name="email"
+                                    placeholder=" Zadajte svoj email"
+                                    className="input-form-contact"
+                                    value={formData.email}
+                                    onChange={handleChange}/>
+                            </div>
+                            <p className="p-form-contact">Telefónne číslo</p>
+                            <div className="input-wrapper">
+                                <MdLocalPhone className="input-icon" size={20}/>
+                                <input
+                                    name="phone"
+                                    placeholder=" Zadajte svoj email"
+                                    className="input-form-contact"
+                                    value={formData.phone}
+                                    onChange={handleChange}/>
+                            </div>
+                            <p className="p-form-contact">Správa</p>
+                            <textarea name="message" placeholder="Správa" className="input-form-contact input-form-contact-message" value={formData.message} onChange={handleChange}/>
+                            <button type="submit" className="button-submit-contact"><span className="span-submit-button-contact">Odoslať<FaArrowRightLong /></span></button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </>

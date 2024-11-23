@@ -24,15 +24,14 @@ function Footer() {
                         <h3>Rýchle linky </h3>
                         <div  className="container-quicklinks-footer">
                             <Link to="/" className="footer-quicklinks footer-quicklinks-link">Home</Link>
-                            <Link to="/booking" className="footer-quicklinks footer-quicklinks-link">Objednanie</Link>
                             <button className="footer-quicklinks">Postup</button>
                             <button className="footer-quicklinks">Cenník</button>
                             <button className="footer-quicklinks">Kontakt</button>
                         </div>
                     </div>
-                    <div>
+                    <div className="container-contact-footer">
                         <h3>Kontakt</h3>
-                        <p className="p-footer-contact">samuelklimko1@gmail.com</p>
+                        <p className="p-footer-contact">webion.sk@gmail.com</p>
                         <p className="p-footer-contact">0950 262 097</p>
                     </div>
                 </div>
