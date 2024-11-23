@@ -1,0 +1,87 @@
+                    <div className="myservices-card">
+                        <h3>Základ</h3>
+                        <p className="mywork-home-p">Pre jednoduché stránky</p>
+                        <h1>100€</h1>
+                        <Link to="/zacatzaklad" className="link-myservices-home">Začať</Link>
+                        <hr className="hr-myservices"/>
+                        <h4>Čo dostanete</h4>
+                        <p><IoIosCheckmarkCircleOutline style={{ paddingRight: "5px"}}/>Moderná 1 stranová stránka</p>
+                        <p><IoIosCheckmarkCircleOutline style={{ paddingRight: "5px"}}/>Doména na 1 rok</p>
+                    </div>
+                    <div className="myservices-card">
+                        <h3>Pokročilý</h3>
+                        <p className="mywork-home-p">Pre profesionálne stránky</p>
+                        <h1>200€</h1>
+                        <Link to="/zacatpokrocily" className="link-myservices-home link-myservices-home-white">Začať</Link>
+                        <hr className="hr-myservices"/>
+                        <h4>Čo dostanete</h4>
+                        <p><IoIosCheckmarkCircleOutline style={{ paddingRight: "5px"}}/>Moderná 10+ stranová stránka</p>
+                        <p><IoIosCheckmarkCircleOutline style={{ paddingRight: "5px"}}/>Doména na 2 roky</p>
+                        <p><IoIosCheckmarkCircleOutline style={{ paddingRight: "5px"}}/>Možnosť e-shopu</p>
+                        <p><IoIosCheckmarkCircleOutline style={{ paddingRight: "5px"}}/>Booking systém</p>
+                    </div>
+                </div>
+
+
+
+.myservices-home-container-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    text-align: center;
+    justify-content: center;
+}
+
+.link-myservices-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #131313;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    height: 50px;
+    font-family: "GeneralSans", sans-serif;
+    border: 1px solid #545454;
+}
+
+.link-myservices-home:hover {
+    background-color: #0e0e0e;
+    transition-duration: 0.8s;
+}
+
+.link-myservices-home-white {
+    color: black;
+    background-color: white;
+}
+
+.link-myservices-home-white:hover {
+    background-color: #959595;
+    transition-duration: 0.8s;    
+}
+
+.myservices-card {
+    background: linear-gradient(to bottom left, #000000, #272727);
+    width: 300px;
+    height: 500px;
+    text-align: left;
+    border-radius: 20px;
+    padding: 40px;
+    border: 1px solid #3e3e3e;
+    transition: transform 0.3s ease; 
+    transform-style: preserve-3d;
+    perspective: 1000px; 
+}
+
+.myservices-card:hover {
+    transform: rotateX(13deg) rotateY(13deg); 
+}
+
+.hr-myservices {
+    margin-top: 40px;
+    opacity: 0.7;
+}
+
+.myservices-h1 {
+    font-size: 56px;
+}

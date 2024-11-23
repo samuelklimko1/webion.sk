@@ -111,35 +111,11 @@ function Home() {
             <div id="services" className="container-myservices">
                 <div className="myservices-container-texts">
                     <p className="mywork-home-p">MOJE SLUŽBY</p>
-                    <h2 className="mywork-home-h2 myservices-h1">Cenník</h2>
+                    <h2 className="mywork-home-h2 myservices-h1">Služby</h2>
                 </div>
                 <div className="myservices-home-container-cards">
-                    <div className="myservices-card">
-                        <h3>Základ</h3>
-                        <p className="mywork-home-p">Pre jednoduché stránky</p>
-                        <h1>100€</h1>
-                        <Link to="/zacatzaklad" className="link-myservices-home">Začať</Link>
-                        <hr className="hr-myservices"/>
-                        <h4>Čo dostanete</h4>
-                        <p><IoIosCheckmarkCircleOutline style={{ paddingRight: "5px"}}/>Moderná 1 stranová stránka</p>
-                        <p><IoIosCheckmarkCircleOutline style={{ paddingRight: "5px"}}/>Doména na 1 rok</p>
-                    </div>
-                    <div className="myservices-card">
-                        <h3>Pokročilý</h3>
-                        <p className="mywork-home-p">Pre profesionálne stránky</p>
-                        <h1>200€</h1>
-                        <Link to="/zacatpokrocily" className="link-myservices-home link-myservices-home-white">Začať</Link>
-                        <hr className="hr-myservices"/>
-                        <h4>Čo dostanete</h4>
-                        <p><IoIosCheckmarkCircleOutline style={{ paddingRight: "5px"}}/>Moderná 10+ stranová stránka</p>
-                        <p><IoIosCheckmarkCircleOutline style={{ paddingRight: "5px"}}/>Doména na 2 roky</p>
-                        <p><IoIosCheckmarkCircleOutline style={{ paddingRight: "5px"}}/>Možnosť e-shopu</p>
-                        <p><IoIosCheckmarkCircleOutline style={{ paddingRight: "5px"}}/>Booking systém</p>
-                    </div>
+                
                 </div>
-            </div>
-            <div>
-                {/*objednanie na call*/}
             </div>
             <div className="container-contact">
                 <div id="contact" className="container-contact-home">
