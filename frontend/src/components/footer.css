@@ -32,19 +32,6 @@
     font-size: 38px;
 }
 
-.socialmedia-footer {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(41, 41, 41); 
-    border-radius: 50%;
-    padding: 10px;
-    width: 20px;
-    height: 20px;
-    text-decoration: none;
-    transition-duration: 0.5s;
-}
-
 .socialmedia-footer:hover {
     background-color: black;
 }

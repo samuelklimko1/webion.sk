@@ -5,6 +5,8 @@ import Footer from "./components/Footer.jsx";
 import Home from "./components/Home.jsx";
 import Preloader from "./components/Preloader.jsx"; 
 import { useState, useEffect } from 'react';
+import Zaklad from "./components/Zaklad.jsx";
+
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -25,6 +27,7 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/zacatzaklad" element={<Zaklad />} />
           </Routes>
           <Footer />
         </div>

@@ -15,18 +15,28 @@ function Footer() {
                     <div>
                         <h1 className="h1-footer">Dizajn a tvorba webstránok. </h1>
                         <div className="container-socials-footer">
-                            <Link to="https://x.com" className="socialmedia-footer"><FaXTwitter size={22} color="white"/></Link>
-                            <Link to="https://linkedin.com" className="socialmedia-footer"><FaLinkedin size={22} color="white"/></Link>
-                            <Link to="https://instagram.com" className="socialmedia-footer"><FaInstagram size={22} color="white"/></Link>
+                            <Link to="https://x.com" className="socialmedia-footer"><FaXTwitter size = "22" color="white"/></Link>
+                            <Link to="https://linkedin.com" className="socialmedia-footer"><FaLinkedin size = "22" color="white"/></Link>
+                            <Link to="https://instagram.com" className="socialmedia-footer"><FaInstagram size = "22" color="white"/></Link>
                         </div>
                     </div>
                     <div className="container-quicklinks">
                         <h3>Rýchle linky </h3>
                         <div  className="container-quicklinks-footer">
                             <Link to="/" className="footer-quicklinks footer-quicklinks-link">Home</Link>
-                            <button className="footer-quicklinks">Postup</button>
-                            <button className="footer-quicklinks">Cenník</button>
-                            <button className="footer-quicklinks">Kontakt</button>
+                            <button 
+                            onClick={() => document.getElementById("projects").scrollIntoView({ behavior: "smooth" })} 
+                            className="footer-quicklinks">
+                                Projekty
+                            </button>
+                            <button onClick={() => document.getElementById("services").scrollIntoView({ behavior: "smooth" })}
+                            className="footer-quicklinks">
+                                Služby
+                            </button>
+                            <button onClick={() => document.getElementById("contact").scrollIntoView({ behavior: "smooth" })}
+                            className="footer-quicklinks">
+                                Kontakt
+                            </button>
                         </div>
                     </div>
                     <div className="container-contact-footer">

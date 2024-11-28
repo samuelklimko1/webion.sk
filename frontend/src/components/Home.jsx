@@ -69,14 +69,14 @@ function Home() {
         <>
             <div className="container-home">
                 <div className={`background-text ${isBgVisible ? 'fade-in' : ''}`}>
-                    design a tvorba webstránok
+                    design tvorba webstránok
                 </div>
                 <div className="container-buttons-home">
                     <button
                         className={`button-home ${isVisible ? 'show' : ''} ${isFullyVisible ? 'visible' : ''}`}
                         onClick={() => document.getElementById("projects").scrollIntoView({ behavior: "smooth" })}
                     >
-                        Moje Projekty
+                        Naše Projekty
                     </button>
                     <button
                         className={`button-home ${isVisible ? 'show' : ''} ${isFullyVisible ? 'visible' : ''}`}
@@ -95,7 +95,7 @@ function Home() {
             <div id="projects" className="container-mywork-home">
                 <div className="container-mywork-home-text">
                     <div>
-                        <p className="mywork-home-p">MOJA PRÁCA</p>
+                        <p className="mywork-home-p">NAŠA PRÁCA</p>
                         <div className="container-mywork-home-h2">
                             <h2 className="mywork-home-h2">Príklady mojich </h2><h2 className="mywork-home-h2-italic">stránok</h2>
                         </div>
@@ -110,26 +110,36 @@ function Home() {
             <Carousel/>
             <div id="services" className="container-myservices">
                 <div className="myservices-container-texts">
-                    <p className="mywork-home-p">MOJE SLUŽBY</p>
+                    <p className="mywork-home-p">NAŠE SLUŽBY</p>
                     <h2 className="mywork-home-h2 myservices-h1">Služby</h2>
                 </div>
                 <div className="myservices-home-container-cards">
-                
+                    <div className="myservices-card">
+                        <h3>Stránka na mieru</h3>
+                        <h1>-€</h1>
+                        <Link to="/zacatzaklad" className="link-myservices-home">Začať</Link>
+                        <hr className="hr-myservices"/>
+                        <h4>Čo dostanete</h4>
+                        <p><IoIosCheckmarkCircleOutline style={{ paddingRight: "5px"}}/>Možnosť E-Shopu</p>
+                        <p><IoIosCheckmarkCircleOutline style={{ paddingRight: "5px"}}/>Doména na 1 až 2 roky</p>
+                        <p><IoIosCheckmarkCircleOutline style={{ paddingRight: "5px"}}/>Prispôsobený dizajn</p>
+                        <p><IoIosCheckmarkCircleOutline style={{ paddingRight: "5px"}}/>Možnosť E-Shopu</p>
+                    </div>
                 </div>
             </div>
             <div className="container-contact">
                 <div id="contact" className="container-contact-home">
                     <div>
-                        <h2 className="h2-contact-home">Kontakt</h2>
+                        <p className="mywork-home-p">KONTAKT</p>
                         <div className="container-contact-h1">
                             <div className="contact-h1"><h1 className="h1-contact-home">Ako vám môžem </h1><h1 className="h1-contact-home-italic"> pomôcť?</h1></div>
                         </div>
                         <p>Môžte vyplniť formulár alebo mi napísať na: </p>
                         <div className="container-contact-links">
                             <div className="container-contact-home-links">
-                                <Link to="mailto:webion.sk@gmail.com" className="link-contact-home"><SiGmail  style={{ paddingRight: '10px', paddingLeft: "3px"}}/> webion.sk@gmail.com</Link>
-                                <Link to="https://www.instagram.com/webion.sk/" className="link-contact-home"><FaInstagram  style={{ paddingRight: '10px', paddingLeft: "3px"}}/> webion.sk</Link>
-                                <Link to="https://linkedin.com" className="link-contact-home"><FaLinkedin  style={{ paddingRight: '10px', paddingLeft: "3px"}}/> Samuel Klimko</Link>
+                                <Link to="mailto:webion.sk@gmail.com" className="link-contact-home"><SiGmail  size = "25" style={{ paddingRight: '10px', paddingLeft: "3px"}}/> webion.sk@gmail.com</Link>
+                                <Link to="https://www.instagram.com/webion.sk/" className="link-contact-home"><FaInstagram size = "25" style={{ paddingRight: '10px', paddingLeft: "3px"}}/> webion.sk</Link>
+                                <Link to="https://linkedin.com" className="link-contact-home"><FaLinkedin size = "25" style={{ paddingRight: '10px', paddingLeft: "3px"}}/> Samuel Klimko</Link>
                             </div>
                         </div>
                     </div>

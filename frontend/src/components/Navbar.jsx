@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./navbar.css";
+import { Link } from "react-router-dom";
 
+ 
 function Navbar() {
     const [isVisible, setIsVisible] = useState(false);
 
@@ -21,14 +23,14 @@ function Navbar() {
 
     return (
         <div className="container-navbar">
-            <nav className={`nav-logo ${isVisible ? 'show' : ''}`}>
+            <Link to="/" className={`nav-logo ${isVisible ? 'show' : ''}`}>
                 <img 
                     src="/webion.png" 
                     alt="Logo" 
                     className="logo-image" 
                     onClick={() => scrollToSection("home")}
                 />
-            </nav>
+            </Link>
             <button className={`contact-nav ${isVisible ? 'show' : ''}`} onClick={() => scrollToSection("contact")}>
                 KONTAKT
             </button>
