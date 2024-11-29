@@ -1,4 +1,62 @@
 .container-zaklad {
     min-height: 60vh;
     padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.zaklad-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-zaklad{
+    font-family: "GeneralSans", sans-serif;
+}
+
+.input-zaklad {
+    border-radius: 25px;
+    height: 40px;
+    width: 400px;
+    background-color: #1e1e1e;
+    border: 2px solid #1e1736;
+    font-family: "GeneralSans", sans-serif;
+    padding-left: 10px;
+    opacity: 0.5;
+}
+
+.input-zaklad:hover {
+    background-color: #3d3d3d;
+    transition-duration: 0.8s;
+}
+
+.input-zaklad:focus {
+    outline: none;
+}
+
+.textarea-zaklad {
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 125px;
+    resize: none;
+    font-size: 14px;
+}
+
+.button-zaklad {
+    margin-top: 20px;
+    height: 40px;
+    border-radius: 25px;
+    border: 1px solid #6e5f94;
+    background-color: #6e5f94;
+}
+
+.button-zaklad:hover {
+    background-color: #4c416a;
+    transition-duration: 0.8s;
 }

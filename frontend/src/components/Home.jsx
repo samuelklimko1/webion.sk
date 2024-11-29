@@ -35,11 +35,11 @@ function Home() {
         axios.post("http://127.0.0.1:5000/contact", formData)
             .then(response => {
                 console.log("Email sent successfully:", response.data);
-                alert("Your message has been sent!");
+                alert("Vaša správa bola úspešne odoslaná!");
             })
             .catch(error => {
                 console.error("There was an error sending the email:", error);
-                alert("There was an error sending your message.");
+                alert("Bol problém s odosielaním vašej správy, skontrolujte zadané údaje.");
             });
     };
     const [isVisible, setIsVisible] = useState(false);
@@ -97,7 +97,7 @@ function Home() {
                     <div>
                         <p className="mywork-home-p">NAŠA PRÁCA</p>
                         <div className="container-mywork-home-h2">
-                            <h2 className="mywork-home-h2">Príklady mojich </h2><h2 className="mywork-home-h2-italic">stránok</h2>
+                            <h2 className="mywork-home-h2">Príklady našich </h2><h2 className="mywork-home-h2-italic">stránok</h2>
                         </div>
                     </div>
                     <div className="mywork-more">
@@ -134,7 +134,7 @@ function Home() {
                         <div className="container-contact-h1">
                             <div className="contact-h1"><h1 className="h1-contact-home">Ako vám môžem </h1><h1 className="h1-contact-home-italic"> pomôcť?</h1></div>
                         </div>
-                        <p>Môžte vyplniť formulár alebo mi napísať na: </p>
+                        <p>Môžte vyplniť formulár alebo nám napísať na: </p>
                         <div className="container-contact-links">
                             <div className="container-contact-home-links">
                                 <Link to="mailto:webion.sk@gmail.com" className="link-contact-home"><SiGmail  size = "25" style={{ paddingRight: '10px', paddingLeft: "3px"}}/> webion.sk@gmail.com</Link>

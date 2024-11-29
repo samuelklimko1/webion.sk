@@ -316,6 +316,9 @@
     height: 125px;
     margin-bottom: 25px;
     resize: none;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 14px;
 }
 
 .button-submit-contact {
