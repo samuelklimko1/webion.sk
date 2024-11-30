@@ -32,7 +32,7 @@ function Home() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        axios.post("http://127.0.0.1:5000/contact", formData)
+        axios.post("https://webionsk-backend.vercel.app/contact", formData)
             .then(response => {
                 console.log("Email sent successfully:", response.data);
                 alert("Vaša správa bola úspešne odoslaná!");
