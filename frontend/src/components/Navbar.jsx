@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom"; 
 import "./navbar.css";
-import { Link } from "react-router-dom";
 
- 
 function Navbar() {
     const [isVisible, setIsVisible] = useState(false);
+    const navigate = useNavigate(); 
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -14,11 +14,16 @@ function Navbar() {
         return () => clearTimeout(timer);
     }, []);
 
-    const scrollToSection = (sectionId) => {
-        const section = document.getElementById(sectionId);
-        if (section) {
-            section.scrollIntoView({ behavior: "smooth" });
-        }
+    const handleScrollAndNavigate = (e) => {
+        e.preventDefault(); 
+        navigate("/"); 
+        
+        setTimeout(() => {
+            window.scrollTo({
+                top: 2200,
+                behavior: "smooth",
+            });
+        }, 100);
     };
 
     return (
@@ -27,11 +32,13 @@ function Navbar() {
                 <img 
                     src="/webion.png" 
                     alt="Logo" 
-                    className="logo-image" 
-                    onClick={() => scrollToSection("home")}
+                    className="logo-image"
                 />
             </Link>
-            <button className={`contact-nav ${isVisible ? 'show' : ''}`} onClick={() => scrollToSection("contact")}>
+            <button
+                className={`contact-nav ${isVisible ? 'show' : ''}`} 
+                onClick={handleScrollAndNavigate} 
+            >
                 KONTAKT
             </button>
         </div>

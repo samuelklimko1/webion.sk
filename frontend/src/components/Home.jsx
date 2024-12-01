@@ -15,6 +15,7 @@ import axios from "axios";
 
 
 function Home() {
+    const [loading, setLoading] = useState(false); 
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -31,7 +32,8 @@ function Home() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
+        setLoading(true);  
+        
         axios.post("https://webionsk-backend.vercel.app/contact", formData)
             .then(response => {
                 console.log("Email sent successfully:", response.data);
@@ -40,8 +42,12 @@ function Home() {
             .catch(error => {
                 console.error("There was an error sending the email:", error);
                 alert("Bol problém s odosielaním vašej správy, skontrolujte zadané údaje.");
+            })
+            .finally(() => {
+                setLoading(false); 
             });
     };
+    
     const [isVisible, setIsVisible] = useState(false);
     const [isFullyVisible, setIsFullyVisible] = useState(false);
     const [isBgVisible, setIsBgVisible] = useState(false); 
@@ -81,6 +87,10 @@ function Home() {
 
         return () => window.removeEventListener("resize", handleResize);
     }, []);
+
+    const handleScrollToTop = () => {
+        window.scrollTo(0, 0);
+    };
 
     return (
         <>
@@ -134,7 +144,7 @@ function Home() {
                     <div className="myservices-card">
                         <h3>Stránka na mieru</h3>
                         <h1>-€</h1>
-                        <Link to="/zacatzaklad" className="link-myservices-home">Začať</Link>
+                        <Link to="/zacatzaklad" className="link-myservices-home" onClick={handleScrollToTop}>Začať</Link>
                         <hr className="hr-myservices"/>
                         <h4>Čo dostanete</h4>
                         <p><IoIosCheckmarkCircleOutline style={{ paddingRight: "5px"}}/>Možnosť E-Shopu</p>
@@ -194,7 +204,21 @@ function Home() {
                             </div>
                             <p className="p-form-contact">Správa</p>
                             <textarea name="message" placeholder="Správa" className="input-form-contact input-form-contact-message" value={formData.message} onChange={handleChange}/>
-                            <button type="submit" className="button-submit-contact"><span className="span-submit-button-contact">Odoslať<FaArrowRightLong /></span></button>
+                            <button
+                                type="submit"
+                                className="button-submit-contact"
+                                onClick={handleSubmit}
+                                disabled={loading} 
+                            >
+                                {loading ? (
+                                    <div className="loading-spinner"></div>  
+                                ) : (
+                                    <span className="span-submit-button-contact">
+                                        Odoslať
+                                        <FaArrowRightLong />
+                                    </span>
+                                )}
+                            </button>
                         </form>
                     </div>
                 </div>

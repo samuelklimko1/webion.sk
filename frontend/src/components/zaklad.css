@@ -40,6 +40,7 @@
     font-family: "GeneralSans", sans-serif;
     padding-left: 10px;
     opacity: 0.5;
+    color: white;
 }
 
 .input-zaklad:hover {
@@ -65,9 +66,25 @@
     border-radius: 25px;
     border: 1px solid #6e5f94;
     background-color: #6e5f94;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
 }
 
 .button-zaklad:hover {
     background-color: #4c416a;
     transition-duration: 0.8s;
+}
+
+.loading-spinner {
+    border-top: 4px solid white; 
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }

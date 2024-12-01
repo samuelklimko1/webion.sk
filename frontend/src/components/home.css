@@ -317,6 +317,7 @@
     font-family: "GeneralSans", sans-serif;
     padding-left: 10px;
     opacity: 0.5;
+    color: white;
 }
 
 .input-form-contact:hover {
@@ -358,6 +359,9 @@
     border-radius: 25px;
     border: 1px solid #6e5f94;
     background-color: #6e5f94;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .button-submit-contact:hover {
@@ -478,4 +482,17 @@
 
 .myservices-h1 {
     font-size: 56px;
+}
+
+.loading-spinner {
+    border-top: 4px solid white; 
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }

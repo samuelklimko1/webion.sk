@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./zaklad.css";
 import axios from "axios";
 
-
 function Zaklad() {
     const [formData, setFormData] = useState({
         name: "",
@@ -11,6 +10,8 @@ function Zaklad() {
         message: "",
         budget: ""
     });
+
+    const [loading, setLoading] = useState(false); 
 
     const handleChange = (e) => {
         setFormData({
@@ -21,6 +22,7 @@ function Zaklad() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        setLoading(true); 
 
         axios.post("https://webionsk-backend.vercel.app/zaklad", formData)
             .then(response => {
@@ -30,6 +32,11 @@ function Zaklad() {
             .catch(error => {
                 console.error("There was an error sending the email:", error);
                 alert("Bol problém s odosielaním vašej správy, skontrolujte zadané údaje.");
+            })
+            .finally(() => {
+                setTimeout(() => {
+                    setLoading(false); 
+                }, 100);
             });
     };
 
@@ -68,26 +75,26 @@ function Zaklad() {
                         />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="name" className="label-zaklad">
+                        <label htmlFor="phone" className="label-zaklad">
                             Vaše číslo:
                         </label>
                         <input
                             type="text"
-                            id="name"
+                            id="phone"
                             name="phone"
                             className="input-zaklad"
-                            placeholder="Zadajte vaše meno"
+                            placeholder="Zadajte vaše číslo"
                             value={formData.phone}
                             onChange={handleChange}
                             required
                         />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="description" className="label-zaklad">
+                        <label htmlFor="message" className="label-zaklad">
                             Popíšte bližšie vaše potreby:
                         </label>
                         <textarea
-                            id="description"
+                            id="message"
                             name="message"
                             className="textarea-zaklad input-zaklad"
                             placeholder="Napíšte detaily o tom, čo potrebujete"
@@ -111,8 +118,17 @@ function Zaklad() {
                             required
                         />
                     </div>
-                    <button type="submit" className="button-zaklad" onClick={handleSubmit}>
-                        Odoslať
+                    <button
+                        type="submit"
+                        className="button-zaklad"
+                        onClick={handleSubmit}
+                        disabled={loading} 
+                    >
+                        {loading ? (
+                            <div className="loading-spinner"></div> 
+                        ) : (
+                            "Odoslať"
+                        )}
                     </button>
                 </form>
             </div>
