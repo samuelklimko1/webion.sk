@@ -40,10 +40,6 @@
         display: flex;
         justify-content: center;
     }
-    .container-contact-h1 {
-        display: flex;
-        justify-content: center;
-    }
 }
 @media(max-width: 900px) {
     .background-text {
@@ -70,31 +66,49 @@
         justify-content: center;
         width: 100%;
     }
+    .container-mywork-home {
+        padding-top: 0px !important;
+    }
+    .container-home {
+        height: 60vh !important;
+    }
+    .container-myservices {
+        padding-top: 100px !important;
+    }
 }
 @media(max-width: 540px) {
     .input-form-contact {
         width: 80% !important;
-        margin-left: 20px;
+        margin-left: 35px;
     }
     .input-icon {
-        margin-left: 20px;
+        margin-left: 35px;
     }
     .button-submit-contact {
-        width: 90% !important;
-        margin-left: 20px;
+        width: 80% !important;
+        margin-left: 35px;
+    }
+    .contact-h1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .h1-contact-home {
+        font-size: 24px !important;
+    }
+    .h1-contact-home-italic {
+        font-size: 24px !important;
     }
 }
 @media (max-width: 460px) {
-    .container-mywork-home-h2 {
-        display: flex;
-        flex-direction: column !important;
+    .mywork-home-h2 {
+        font-size: 32px !important;
+    }
+    .mywork-home-h2-italic {
+        font-size: 32px !important;
     }
 }
-@media(max-width: 448px) {
-    .contact-h1 {
-        flex-direction: column !important;
-    }
-}
+
 .container-home {
     display: flex;
     justify-content: center;
