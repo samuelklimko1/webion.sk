@@ -45,6 +45,7 @@ function Home() {
     const [isVisible, setIsVisible] = useState(false);
     const [isFullyVisible, setIsFullyVisible] = useState(false);
     const [isBgVisible, setIsBgVisible] = useState(false); 
+    const [backgroundText, setBackgroundText] = useState("webstránok");
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -65,11 +66,27 @@ function Home() {
         }
     }, [isVisible]);
 
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth < 570) {
+                setBackgroundText("webov");
+            } else {
+                setBackgroundText("webstránok");
+            }
+        };
+
+        handleResize();
+
+        window.addEventListener("resize", handleResize);
+
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
     return (
         <>
             <div className="container-home">
-                <div className={`background-text ${isBgVisible ? 'fade-in' : ''}`}>
-                    design tvorba webstránok
+                <div className={`background-text ${isBgVisible ? "fade-in" : ""}`}>
+                    design tvorba {backgroundText}
                 </div>
                 <div className="container-buttons-home">
                     <button

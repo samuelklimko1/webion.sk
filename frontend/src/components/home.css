@@ -78,15 +78,10 @@
 }
 @media(max-width: 540px) {
     .input-form-contact {
-        width: 80% !important;
-        margin-left: 35px;
-    }
-    .input-icon {
-        margin-left: 35px;
+        width: 350px !important;
     }
     .button-submit-contact {
-        width: 80% !important;
-        margin-left: 35px;
+        width: 350px !important;
     }
     .contact-h1 {
         display: flex;
@@ -100,12 +95,35 @@
         font-size: 24px !important;
     }
 }
+@media (max-width: 483px) {
+    .button-home {
+        font-size: 20px !important;
+    }
+}
 @media (max-width: 460px) {
     .mywork-home-h2 {
         font-size: 32px !important;
     }
     .mywork-home-h2-italic {
         font-size: 32px !important;
+    }
+}
+@media (max-width: 425px) {
+    .input-form-contact {
+        width: 300px !important;
+        margin-left: 15px !important;
+    }
+    .button-submit-contact {
+        width: 300px !important;
+        margin-left: 15px !important;
+    }
+    .input-icon {
+        margin-left: 15px !important;
+    }
+}
+@media (max-width: 380px) {
+    .button-home {
+        font-size: 18px !important;
     }
 }
 
