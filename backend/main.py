@@ -40,14 +40,14 @@ def contact():
     msg_to_user.body = f"""
     Dobrý deň {name},
 
-    Ďakujeme za Vašu správu. Dostali sme vašu správu: 
+    Ďakujeme za Vašu správu: 
 
     "{message_content}"
 
     Čoskoro sa Vám ozveme.
 
     Ďakujeme,
-    Webion.sk Tím
+    Samuel Klimko z tímu Webion.sk
     """
     mail.send(msg_to_user)
 
@@ -88,7 +88,7 @@ def zaklad():
     Čoskoro sa Vám ozveme.
     
     Ďakujeme,
-    Webion.sk Tím
+    Samuel Klimko z tímu Webion.sk
     """
     mail.send(msg_to_user)
 
