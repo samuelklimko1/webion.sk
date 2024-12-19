@@ -39,3 +39,7 @@ img, video {
   overflow: hidden;
   margin: 0 auto;
 }
+
+::selection {
+  background-color: rgb(108, 63, 108);
+}

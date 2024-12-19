@@ -27,7 +27,8 @@ const Carousel = () => {
                 breakpoint: 768,
                 settings: {
                     slidesToShow: 1, 
-                    centerMode: false, 
+                    centerMode: true,
+                    focusOnSelect: true, 
                 }
             }
         ]
@@ -38,22 +39,22 @@ const Carousel = () => {
             <Slider {...settings}>
                 <div className="carousel-slide">
                     <a href="https://instagram.com">
-                        <img src="1.avif" alt="Slide 1" />
+                        <img src="wearspse.png" alt="Slide 1" />
                     </a>
                 </div>
                 <div className="carousel-slide">
                     <a href="https://instagram.com">
-                        <img src="2.avif" alt="Slide 2" />
+                        <img src="webion-1.png" alt="Slide 2" />
                     </a>
                 </div>
                 <div className="carousel-slide">
                     <a href="https://instagram.com">
-                        <img src="3.avif" alt="Slide 3" />
+                        <img src="beautybytina.png" alt="Slide 3" />
                     </a>
                 </div>
                 <div className="carousel-slide">
                     <a href="https://instagram.com">
-                        <img src="4.avif" alt="Slide 4" />
+                        <img src="wearspse.png" alt="Slide 4" />
                     </a>
                 </div>
             </Slider>

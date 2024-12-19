@@ -40,6 +40,6 @@
         padding: 5px;
     }
     .carousel-slide img {
-        max-height: 300px; /* Adjust height on mobile */
+        max-height: 300px; 
     }
 }

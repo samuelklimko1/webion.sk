@@ -150,7 +150,7 @@ function Home() {
                         <p><IoIosCheckmarkCircleOutline style={{ paddingRight: "5px"}}/>Možnosť E-Shopu</p>
                         <p><IoIosCheckmarkCircleOutline style={{ paddingRight: "5px"}}/>Doména na 1 až 2 roky</p>
                         <p><IoIosCheckmarkCircleOutline style={{ paddingRight: "5px"}}/>Prispôsobený dizajn</p>
-                        <p><IoIosCheckmarkCircleOutline style={{ paddingRight: "5px"}}/>Možnosť E-Shopu</p>
+                        <p><IoIosCheckmarkCircleOutline style={{ paddingRight: "5px"}}/>Systému na objednávanie</p>
                     </div>
                 </div>
             </div>
