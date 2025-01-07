@@ -128,7 +128,7 @@ function Home() {
                         </div>
                     </div>
                     <div className="mywork-more">
-                        <Link to="https://linkedin.com" className="link-more-mywork">
+                        <Link to="https://www.instagram.com/webion.sk/" className="link-more-mywork">
                             <span className="arrow-container">Viac<div style={{ backgroundColor: 'white', borderRadius: '60px', paddingTop: "5px", paddingLeft: "6px", paddingRight: "6px"}}><FaArrowRight color="black" /></div></span>
                         </Link>
                     </div>

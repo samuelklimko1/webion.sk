@@ -20,7 +20,7 @@ function Footer() {
                         <div className="container-socials-footer">
                             <Link to="https://x.com" className="socialmedia-footer"><FaXTwitter size="22" color="white" /></Link>
                             <Link to="https://linkedin.com" className="socialmedia-footer"><FaLinkedin size="22" color="white" /></Link>
-                            <Link to="https://instagram.com" className="socialmedia-footer"><FaInstagram size="22" color="white" /></Link>
+                            <Link to="https://www.instagram.com/webion.sk/" className="socialmedia-footer"><FaInstagram size="22" color="white" /></Link>
                         </div>
                     </div>
                     <div className="container-quicklinks">
