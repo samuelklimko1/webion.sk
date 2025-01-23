@@ -39,7 +39,7 @@ const Carousel = () => {
             <Slider {...settings}>
                 <div className="carousel-slide">
                     <a href="https://instagram.com">
-                        <img src="wearspse.png" alt="Slide 1" />
+                        <img src="trion.png" alt="Slide 1" />
                     </a>
                 </div>
                 <div className="carousel-slide">
