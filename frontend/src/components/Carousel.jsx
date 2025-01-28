@@ -44,7 +44,7 @@ const Carousel = () => {
                 </div>
                 <div className="carousel-slide">
                     <a href="https://instagram.com">
-                        <img src="webion-1.png" alt="Slide 2" />
+                        <img src="pravnik.png" alt="Slide 2" />
                     </a>
                 </div>
                 <div className="carousel-slide">
